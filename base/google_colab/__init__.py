@@ -18,13 +18,13 @@ def show_video(video_url, current_time=0):
         и JavaScript для установки текущей позиции воспроизведения видео.
     """
 
-     HTML(f'''
-    <video id="video_player" width="800" controls>
-    <source src="{video_url}" type="video/mp4">
-    Ваш браузер не поддерживает видео.
-    </video>
-    <script>
-    var video = document.getElementById('video_player');
-    video.currentTime = {current_time} ;  
-    </script>
-    ''')
+     return HTML(f'''
+        <video id="video_player" width="800" controls>
+        <source src="{video_url}" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+        </video>
+        <script>
+        var video = document.getElementById('video_player');
+        video.currentTime = {current_time} ;  
+        </script>
+        ''')

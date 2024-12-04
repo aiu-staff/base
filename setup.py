@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="aiu-staff/base",  # Название вашего модуля
-    version="0.1.1",  # Версия
+    version="0.1.2",  # Версия
     packages=find_packages(),  # Автоматически находит все пакеты
     install_requires=[  # Зависимости, если они есть
 
